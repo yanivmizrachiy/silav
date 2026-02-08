@@ -1,0 +1,257 @@
+:root{
+  --font-heebo: "Heebo", "Assistant", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  --sand-50: #f6f3ee;
+  --ink-900: #1a1a1a;
+  --navy-950: #0f1b2f;
+  --card-cream: #f7e7d5;
+  --amber: #f59e0b;
+}
+
+*{ box-sizing:border-box; }
+
+html, body{ height:100%; }
+
+body{
+  margin:0;
+  font-family: var(--font-heebo);
+  background: var(--sand-50);
+  color: var(--ink-900);
+  line-height: 1.6;
+}
+
+.container{
+  width:100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+header.hero{
+  position: relative;
+  overflow:hidden;
+  background: var(--navy-950);
+  color:#fff;
+}
+
+.heroInner{
+  position: relative;
+  padding: 44px 0 52px;
+}
+
+.kicker{
+  font-size: 18px;
+  letter-spacing: .08em;
+  text-align:center;
+  color: gold;
+  font-weight: 800;
+  text-shadow: 0 1px 0 rgba(0,0,0,.25);
+}
+
+.kickerSub{
+  margin-top: 8px;
+  font-size: 16px;
+  letter-spacing: .04em;
+  color: gold;
+  font-weight: 800;
+  text-shadow: 0 1px 0 rgba(0,0,0,.25);
+}
+
+h1{
+  margin: 18px 0 0;
+  font-weight: 800;
+  text-align:center;
+  font-size: 38px;
+  line-height: 1.15;
+}
+
+.heart{
+  display: inline-block;
+  margin: 0 .28em;
+  color: gold;
+  opacity: .85;
+  font-weight: 900;
+  transform: translateY(-.03em);
+  text-shadow: 0 1px 0 rgba(0,0,0,.25);
+}
+
+.subtitle{
+  margin: 14px auto 0;
+  max-width: 920px;
+  text-align:center;
+  font-size: 14px;
+  color: rgba(255,255,255,.78);
+}
+
+.lead{
+  margin: 18px auto 0;
+  max-width: 780px;
+  text-align:center;
+  font-size: 16px;
+  color: rgba(255,255,255,.82);
+}
+
+.chips{
+  margin-top: 22px;
+  display:flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+
+.chip{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding: .45rem .8rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.18);
+  background: rgba(255,255,255,.06);
+  color: rgba(255,255,255,.86);
+  font-size: .85rem;
+  backdrop-filter: blur(8px);
+}
+
+.heroGlowWrap{ position:absolute; inset:0; opacity:.30; }
+
+.heroGlow{
+  position:absolute;
+  width: 520px;
+  height: 520px;
+  border-radius: 999px;
+  filter: blur(70px);
+  opacity: .6;
+}
+
+.heroGlow--a{
+  right: -120px;
+  top: -160px;
+  background: radial-gradient(circle, rgba(245,158,11,.75) 0%, rgba(245,158,11,0) 70%);
+}
+
+.heroGlow--b{
+  left: -120px;
+  bottom: -220px;
+  background: radial-gradient(circle, rgba(59,130,246,.65) 0%, rgba(59,130,246,0) 70%);
+}
+
+main{ padding: 28px 0 64px; }
+
+.sectionTitle{
+  margin: 18px 0 10px;
+  font-weight: 800;
+  font-size: 16px;
+  color: rgba(26,26,26,.72);
+  text-align:center;
+}
+
+.sectionTitle--spaced{ margin-top: 26px; }
+
+.card--center{ text-align: center; }
+
+.stack{
+  display: grid;
+  gap: 14px;
+}
+
+.card{
+  background: var(--card-cream);
+  border: 1px solid rgba(15,27,47,.12);
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 18px 40px rgba(15,27,47,.10);
+}
+
+.card h2{
+  margin:0;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--ink-900);
+}
+
+.timeSep{
+  color: #B8860B;
+  font-weight: 900;
+}
+
+.timeLabel{
+  color: #B8860B;
+  font-weight: 900;
+}
+
+.timeText{
+  color: #B8860B;
+  font-weight: 900;
+}
+
+.meta{
+  margin-top: 8px;
+  font-size: 13px;
+  color: rgba(26,26,26,.60);
+  font-weight: 700;
+}
+
+.card p{
+  margin: 14px 0 0;
+  color: rgba(26,26,26,.78);
+}
+
+.bullets{
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+  color: rgba(26,26,26,.78);
+}
+
+.bullets li{
+  margin-top: 10px;
+  padding-inline-start: 18px;
+  position: relative;
+}
+
+.bullets li::before{
+  content: "•";
+  position:absolute;
+  inset-inline-start: 0;
+  color: rgba(245,158,11,.95);
+  font-weight: 900;
+}
+
+.tags{
+  margin-top: 16px;
+  display:flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag{
+  display:inline-flex;
+  align-items:center;
+  gap:.45rem;
+  padding:.45rem .75rem;
+  border-radius: 999px;
+  background: rgba(245,158,11,.12);
+  color: rgba(15,27,47,.9);
+  border: 1px solid rgba(245,158,11,.35);
+  font-weight: 700;
+  font-size: .9rem;
+}
+
+footer{
+  margin-top: 42px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(26,26,26,.10);
+  text-align:center;
+  font-size: 13px;
+  color: rgba(26,26,26,.55);
+}
+
+@media (min-width: 768px){
+  .heroInner{ padding: 80px 0 92px; }
+  h1{ font-size: 60px; }
+  .subtitle{ font-size: 15px; }
+  .lead{ font-size: 18px; }
+  .card h2{ font-size: 28px; }
+  .sectionTitle{ font-size: 14px; }
+  .kicker{ font-size: 22px; }
+  .kickerSub{ font-size: 18px; }
+}
