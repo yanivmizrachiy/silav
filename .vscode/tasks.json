@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Sync: Commit + Push",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "scripts/sync-to-github.ps1"
+      ],
+      "problemMatcher": [],
+      "group": "build"
+    }
+  ]
+}
