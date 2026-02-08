@@ -1,9 +1,9 @@
 @page{ size: A4; margin: 0; }
 
 :root{
-  --navy: #0f1b2f;
+  --navy: #0b1220;
   --ink: #ffffff;
-  --gold: gold;
+  --gold: #d6b35e;
 }
 
 *{ box-sizing: border-box; }

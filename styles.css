@@ -1,10 +1,11 @@
 :root{
   --font-heebo: "Heebo", "Assistant", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  --sand-50: #f6f3ee;
-  --ink-900: #1a1a1a;
-  --navy-950: #0f1b2f;
-  --card-cream: #f7e7d5;
-  --amber: #f59e0b;
+  --sand-50: #f7f4ef;
+  --ink-900: #121826;
+  --navy-950: #0b1220;
+  --card-cream: #fff2df;
+  --accent-gold: #d6b35e;
+  --accent-gold-deep: #b28a2f;
 }
 
 *{ box-sizing:border-box; }
@@ -42,7 +43,7 @@ header.hero{
   font-size: 18px;
   letter-spacing: .08em;
   text-align:center;
-  color: gold;
+  color: var(--accent-gold);
   font-weight: 800;
   text-shadow: 0 1px 0 rgba(0,0,0,.25);
 }
@@ -51,7 +52,7 @@ header.hero{
   margin-top: 8px;
   font-size: 16px;
   letter-spacing: .04em;
-  color: gold;
+  color: var(--accent-gold);
   font-weight: 800;
   text-shadow: 0 1px 0 rgba(0,0,0,.25);
 }
@@ -67,7 +68,7 @@ h1{
 .heart{
   display: inline-block;
   margin: 0 .28em;
-  color: gold;
+  color: var(--accent-gold);
   opacity: .85;
   font-weight: 900;
   transform: translateY(-.03em);
@@ -169,17 +170,23 @@ main{ padding: 28px 0 64px; }
 }
 
 .timeSep{
-  color: #B8860B;
+  color: var(--accent-gold-deep);
   font-weight: 900;
 }
 
+.timeRow{
+  display: block;
+  margin-top: 6px;
+  white-space: nowrap;
+}
+
 .timeLabel{
-  color: #B8860B;
+  color: var(--accent-gold-deep);
   font-weight: 900;
 }
 
 .timeText{
-  color: #B8860B;
+  color: var(--accent-gold-deep);
   font-weight: 900;
 }
 
@@ -212,7 +219,7 @@ main{ padding: 28px 0 64px; }
   content: "•";
   position:absolute;
   inset-inline-start: 0;
-  color: rgba(245,158,11,.95);
+  color: rgba(214,179,94,.95);
   font-weight: 900;
 }
 
@@ -229,9 +236,9 @@ main{ padding: 28px 0 64px; }
   gap:.45rem;
   padding:.45rem .75rem;
   border-radius: 999px;
-  background: rgba(245,158,11,.12);
+  background: rgba(214,179,94,.14);
   color: rgba(15,27,47,.9);
-  border: 1px solid rgba(245,158,11,.35);
+  border: 1px solid rgba(214,179,94,.36);
   font-weight: 700;
   font-size: .9rem;
 }
@@ -254,4 +261,11 @@ footer{
   .sectionTitle{ font-size: 14px; }
   .kicker{ font-size: 22px; }
   .kickerSub{ font-size: 18px; }
+  .timeRow{
+    display: inline-flex;
+    align-items: baseline;
+    gap: .35em;
+    margin-top: 0;
+    margin-inline-start: .35em;
+  }
 }
